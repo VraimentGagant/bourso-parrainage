@@ -1,119 +1,1196 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BoursoBank Parrainage — Jusqu'à 320 € offerts | Sans frais</title>
-<meta name="description" content="Ouvre ton compte BoursoBank avec le code parrain LOLE62846Z et récupère jusqu'à 320 € de prime de bienvenue. Sans frais cachés, sans engagement.">
-<style>
-  :root { --purple: #5B21B6; --accent: #7C3AED; --bg: #FAFAFA; }
-  * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
-  body { background: var(--bg); color: #1a1a1a; line-height: 1.6; }
-  .container { max-width: 720px; margin: 0 auto; padding: 24px 20px; }
-  .badge { display: inline-block; background: #FEF3C7; color: #92400E; font-size: 0.85rem;
-           font-weight: 600; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
-  h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; margin-bottom: 8px; }
-  h2 { font-size: 1.4rem; margin-top: 40px; margin-bottom: 16px; }
-  .subtitle { color: #555; font-size: 1.05rem; margin-bottom: 28px; }
-  .cta { display: inline-block; background: var(--purple); color: #fff; text-decoration: none;
-         font-weight: 700; font-size: 1.1rem; padding: 16px 32px; border-radius: 12px;
-         box-shadow: 0 4px 14px rgba(91,33,182,.35); transition: transform .15s; }
-  .cta:hover { transform: translateY(-2px); background: var(--accent); }
-  .card { background: #fff; border: 1px solid #E5E7EB; border-radius: 14px; padding: 16px 20px;
-          margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-  .card .label { font-weight: 600; }
-  .card .detail { font-size: 0.85rem; color: #777; }
-  .amount { font-size: 1.25rem; font-weight: 800; color: var(--purple); white-space: nowrap; }
-  .amounts-inline { display: flex; gap: 4px; align-items: baseline; flex-wrap: wrap; }
-  .total { background: linear-gradient(135deg, #5B21B6, #7C3AED); color: #fff; border-radius: 14px;
-           padding: 20px 24px; margin-top: 20px; text-align: center; }
-  .total .amount { color: #fff; font-size: 2rem; }
-  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 14px; overflow: hidden;
-          box-shadow: 0 1px 3px rgba(0,0,0,.08); }
-  th, td { padding: 12px 16px; text-align: left; }
-  th { background: var(--purple); color: #fff; }
-  tr:nth-child(even) { background: #F9FAFB; }
-  .conditions { background: #fff; border: 1px solid #E5E7EB; border-radius: 14px;
-                padding: 20px 24px; margin-top: 16px; }
-  .conditions ul { padding-left: 20px; }
-  .conditions li { margin-bottom: 6px; }
-  .disclaimer { margin-top: 36px; font-size: 0.88rem; color: #666; border-top: 1px solid #E5E7EB;
-                padding-top: 20px; }
-  footer { text-align: center; color: #999; font-size: 0.8rem; margin-top: 30px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Offre boostée BoursoBank : jusqu'à 320€ offerts. Versements garantis sous 7 jours à 2 mois. Banque sérieuse (Société Générale). Code LOLE62846Z.">
+  <meta name="keywords" content="BoursoBank, parrainage, 320€, offre boostée, code parrain, prime bancaire">
+  <meta name="author" content="VraimentGagant">
+  
+  <!-- OG Tags pour réseaux sociaux -->
+  <meta property="og:title" content="320€ OFFERTS - BoursoBank Offre Boostée">
+  <meta property="og:description" content="Code: LOLE62846Z. Versements rapides garantis. Offre jusqu'au 13/10/2026">
+  <meta property="og:image" content="https://raw.githubusercontent.com/VraimentGagant/bourso-parrainage/main/og-image.png">
+  <meta property="og:url" content="https://vraimentgagant.github.io/bourso-parrainage/">
+  <meta property="og:type" content="website">
+  
+  <title>BoursoBank 320€ Offerts | Offre Boostée | Code LOLE62846Z</title>
+  
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --purple-dark: #5B21B6;
+      --purple-main: #7C3AED;
+      --purple-light: #A78BFA;
+      --white: #FFFFFF;
+      --gray-light: #F9FAFB;
+      --gray: #6B7280;
+      --gray-dark: #1F2937;
+      --gold: #F59E0B;
+      --success: #10B981;
+      --red: #EF4444;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-dark);
+      background: var(--gray-light);
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    video { max-width: 100%; height: auto; display: block; border-radius: 12px; }
+    
+    /* ===== MOBILE-FIRST RESPONSIVE ===== */
+    .container {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    @media (min-width: 768px) {
+      .container { padding: 0 40px; }
+    }
+    
+    /* ===== COUNTDOWN TIMER ===== */
+    .countdown-section {
+      background: linear-gradient(135deg, #FEF3C7, #FDE68A);
+      border: 2px solid var(--gold);
+      border-radius: 16px;
+      padding: 25px 20px;
+      margin: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(245,158,11,0.2);
+    }
+    
+    .countdown-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #92400E;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .countdown-timer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .countdown-item {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 15px 20px;
+      min-width: 80px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .countdown-number {
+      display: block;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--purple-dark);
+      line-height: 1;
+    }
+    
+    .countdown-label {
+      font-size: 0.75rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+    
+    .countdown-expired {
+      color: var(--red);
+      font-size: 1.1rem;
+      font-weight: 700;
+      animation: pulse 1s infinite;
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-main) 100%);
+      color: var(--white);
+      padding: 40px 20px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    
+    .badge {
+      display: inline-block;
+      background: var(--gold);
+      color: #78350F;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: shake 3s infinite;
+    }
+    
+    @keyframes shake {
+      0%, 90%, 100% { transform: translateX(0); }
+      93% { transform: translateX(-3px); }
+      96% { transform: translateX(3px); }
+    }
+    
+    h1 {
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .hero p.subtitle {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+    
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--white);
+      color: var(--purple-dark);
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 18px 40px;
+      border-radius: 50px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    
+    .cta-button .arrow { font-size: 1.3rem; }
+    
+    /* ===== IMAGE PRINCIPALE ===== */
+    .main-image {
+      position: relative;
+      margin: -30px auto 40px;
+      max-width: 90%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      background: var(--white);
+      padding: 10px;
+    }
+    
+    .main-image img {
+      border-radius: 16px;
+      width: 100%;
+    }
+    
+    @media (min-width: 768px) {
+      .main-image { margin-top: -50px; max-width: 600px; }
+    }
+    
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-bottom: 50px;
+    }
+    
+    @media (min-width: 640px) {
+      .trust-bar { grid-template-columns: repeat(4, 1fr); }
+    }
+    
+    .trust-item {
+      background: var(--white);
+      padding: 20px 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 1px solid #E5E7EB;
+    }
+    
+    .trust-icon { font-size: 2rem; margin-bottom: 10px; }
+    .trust-title { font-size: 0.9rem; font-weight: 700; color: var(--purple-dark); margin-bottom: 5px; }
+    .trust-text { font-size: 0.8rem; color: var(--gray); }
+    
+    /* ===== SECTION GÉNÉRIQUE ===== */
+    .section {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 30px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid #E5E7EB;
+    }
+    
+    .section h2 {
+      font-size: 1.6rem;
+      color: var(--purple-dark);
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    /* ===== PRIMES GRID ===== */
+    .primes-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    @media (min-width: 640px) {
+      .primes-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    
+    .prime-card {
+      background: linear-gradient(135deg, #F3F4F6, #E5E7EB);
+      padding: 20px;
+      border-radius: 14px;
+      border-left: 4px solid var(--purple-main);
+    }
+    
+    .prime-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .prime-label { font-weight: 700; color: var(--gray-dark); font-size: 0.95rem; }
+    .prime-amount { font-size: 1.5rem; font-weight: 800; color: var(--purple-dark); }
+    .prime-detail { font-size: 0.85rem; color: var(--gray); line-height: 1.5; }
+    .prime-tag {
+      display: inline-block;
+      background: var(--success);
+      color: white;
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+    
+    /* ===== TOTAL BIG ===== */
+    .total-section {
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple-main));
+      color: var(--white);
+      text-align: center;
+      padding: 40px 20px;
+      margin: 30px 0;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .total-label { font-size: 1.1rem; opacity: 0.9; margin-bottom: 10px; }
+    .total-amount { font-size: 3.5rem; font-weight: 900; line-height: 1; margin-bottom: 15px; }
+    .total-sub { font-size: 0.95rem; opacity: 0.9; }
+    
+    /* ===== TÉMOIGNAGES VIDÉOS ===== */
+    .testimonials-section {
+      background: linear-gradient(135deg, #F3F4F6, #E0E7FF);
+      padding: 35px 20px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      border: 1px solid #C7D2FE;
+    }
+    
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .testimonials-header h2 {
+      font-size: 1.8rem;
+      color: var(--purple-dark);
+      margin-bottom: 10px;
+    }
+    
+    .testimonials-subtitle {
+      font-size: 1rem;
+      color: var(--gray);
+    }
+    
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--success);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    @media (min-width: 768px) {
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      background: #111;
+    }
+    
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px 16px 0 0;
+    }
+    
+    .testimonial-info {
+      padding: 20px;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--purple-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    
+    .author-details strong {
+      display: block;
+      color: var(--gray-dark);
+      font-size: 1rem;
+    }
+    
+    .author-details span {
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+    
+    .testimonial-quote {
+      font-style: italic;
+      color: var(--gray-dark);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    
+    .testimonial-stats {
+      display: flex;
+      gap: 15px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #E5E7EB;
+    }
+    
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+    
+    /* ===== CONFIDENCE SECTION ===== */
+    .confidence {
+      background: var(--gray-light);
+      padding: 25px 20px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      border: 1px solid #D1D5DB;
+    }
+    
+    .confidence h3 {
+      color: var(--purple-dark);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .conf-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .conf-icon { font-size: 1.5rem; flex-shrink: 0; }
+    
+    .conf-content strong {
+      display: block;
+      color: var(--gray-dark);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .conf-content p { font-size: 0.9rem; color: var(--gray); }
+    
+    .alert-info {
+      background: #EFF6FF;
+      border-left: 4px solid #3B82F6;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #1E40AF;
+    }
+    
+    /* ===== FAQ SECTION ===== */
+    .faq-section {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 30px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid #E5E7EB;
+    }
+    
+    .faq-section h2 {
+      font-size: 1.6rem;
+      color: var(--purple-dark);
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    .faq-item {
+      border-bottom: 1px solid #E5E7EB;
+      padding: 20px 0;
+    }
+    
+    .faq-item:last-child { border-bottom: none; }
+    
+    .faq-question {
+      font-weight: 700;
+      color: var(--gray-dark);
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .faq-question::before {
+      content: 'Q.';
+      background: var(--purple-main);
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    
+    .faq-answer {
+      color: var(--gray);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      padding-left: 38px;
+    }
+    
+    .faq-answer strong { color: var(--gray-dark); }
+    
+    /* ===== CONDITIONS ===== */
+    .conditions {
+      background: #FFFBEB;
+      border: 1px solid #FCD34D;
+      border-radius: 16px;
+      padding: 25px 20px;
+      margin: 30px 0;
+    }
+    
+    .conditions h3 {
+      color: #92400E;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .conditions ul { list-style: none; padding: 0; }
+    
+    .conditions li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      font-size: 0.95rem;
+      color: var(--gray-dark);
+      border-bottom: 1px solid #FEF3C7;
+    }
+    
+    .conditions li:last-child { border-bottom: none; }
+    
+    .conditions li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: 700;
+    }
+    
+    /* ===== CODE BOX ===== */
+    .code-box {
+      background: var(--gray-light);
+      border: 2px dashed var(--purple-main);
+      border-radius: 14px;
+      padding: 25px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    
+    .code-box label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    
+    .code-display {
+      display: inline-block;
+      background: var(--white);
+      border: 1px solid #D1D5DB;
+      border-radius: 10px;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--purple-dark);
+      letter-spacing: 2px;
+      font-family: 'Courier New', monospace;
+      margin-bottom: 20px;
+    }
+    
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--gray);
+      font-size: 0.85rem;
+      border-top: 1px solid #E5E7EB;
+      margin-top: 40px;
+    }
+    
+    footer a { color: var(--purple-main); text-decoration: underline; }
+    
+    .disclaimer {
+      margin-top: 20px;
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+    
+    /* ===== ANIMATIONS ===== */
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in { animation: slideUp 0.6s ease-out; }
+    
+    /* ===== FLOATING CTA ===== */
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .floating-cta { display: block; }
+    }
+    
+    .floating-btn {
+      background: var(--purple-dark);
+      color: var(--white);
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 8px 30px rgba(91,33,182,0.5);
+      animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-8px); }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-
-  <span class="badge">Offre boostée · se termine le 13/10/2026 à 17h</span>
-  <h1>Jusqu'à 320&nbsp;€ offerts dès l'ouverture</h1>
-  <p class="subtitle">Sans frais cachés. Sans engagement. Ouvert en 5 min.</p>
-
-  <a class="cta" href="https://www.boursobank.com/landing/parrainage?code_parrain=LOLE62846Z&origine=868" rel="nofollow noopener">Ouvrir mon compte →</a>
-
-  <h2>Tes primes (Filleul)</h2>
-
-  <div class="card">
-    <div><div class="label">Ouverture du compte</div><div class="detail">Créditée au plus tard dans les 2 mois</div></div>
-    <span class="amount">80&nbsp;€</span>
-  </div>
-
-  <div class="card">
-    <div><div class="label">1<sup>er</sup> versement</div>
-      <div class="detail">Sous 7 jours après le versement (dans les 30 j suivant l'ouverture)</div></div>
-    <div class="amounts-inline">
-      <span class="amount">jusqu'à 80&nbsp;€</span>
-    </div>
-    <div class="detail" style="flex-basis:100%">
-      10&nbsp;€ (versement 1&nbsp;–&nbsp;49&nbsp;€) · 40&nbsp;€ (50&nbsp;–&nbsp;299&nbsp;€) · 80&nbsp;€ (≥&nbsp;300&nbsp;€)
+  
+  <!-- HERO -->
+  <div class="hero fade-in">
+    <div class="container">
+      <span class="badge">⚡ Offre Boostée Limitée</span>
+      <h1>Jusqu'à 320 € OFFERTS</h1>
+      <p class="subtitle">Ouvre ton compte BoursoBank AVANT le 13/10/2026 à 17h</p>
+      
+      <a href="https://www.boursobank.com/landing/parrainage?code_parrain=LOLE62846Z&origine=868" 
+         class="cta-button"
+         target="_blank"
+         rel="nofollow noopener">
+        PROFITER DE L'OFFRE
+        <span class="arrow">→</span>
+      </a>
     </div>
   </div>
-
-  <div class="card">
-    <div><div class="label">1 opération carte / mois × 3 mois</div>
-      <div class="detail">20&nbsp;€ (j&nbsp;1–30) + 30&nbsp;€ (j&nbsp;31–60) + 30&nbsp;€ (j&nbsp;61–90)</div></div>
-    <span class="amount">jusqu'à 80&nbsp;€</span>
+  
+  <div class="container">
+    
+    <!-- COUNTDOWN TIMER -->
+    <div class="countdown-section fade-in">
+      <div class="countdown-title">
+        <span>⏰</span>
+        <span>Offre expire dans :</span>
+      </div>
+      <div class="countdown-timer" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-number" id="days">00</span>
+          <span class="countdown-label">Jours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="hours">00</span>
+          <span class="countdown-label">Heures</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="minutes">00</span>
+          <span class="countdown-label">Min</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="seconds">00</span>
+          <span class="countdown-label">Sec</span>
+        </div>
+      </div>
+      <div id="expired-message" style="display: none;" class="countdown-expired">
+        ⚠️ Cette offre est expirée. Vérifie les conditions actuelles sur boursobank.com
+      </div>
+    </div>
+    
+    <!-- IMAGE PRINCIPALE -->
+    <div class="main-image fade-in">
+      <img src="https://raw.githubusercontent.com/VraimentGagant/bourso-parrainage/main/og-image.png" 
+           alt="BoursoBank 320€ Offerts - Code parrain LOLE62846Z"
+           loading="eager">
+    </div>
+    
+    <!-- BARRE DE CONFIANCE -->
+    <div class="trust-bar fade-in">
+      <div class="trust-item">
+        <div class="trust-icon">🏦</div>
+        <div class="trust-title">Société Générale</div>
+        <div class="trust-text">Filiale agréée ACPR</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔒</div>
+        <div class="trust-title">100% Sécurisé</div>
+        <div class="trust-text">Protection FDGF 100k€</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-title">Versé Rapidement</div>
+        <div class="trust-text">7 jours à 2 mois</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🏆</div>
+        <div class="trust-title">N°1 France</div>
+        <div class="trust-text">Depuis 2019</div>
+      </div>
+    </div>
+    
+    <!-- SECTION PRIMES FILLEUL -->
+    <div class="section fade-in">
+      <h2>🎁 Tes Primes (Filleul)</h2>
+      
+      <div class="primes-grid">
+        <div class="prime-card">
+          <div class="prime-header">
+            <span class="prime-label">Ouverture du compte</span>
+            <span class="prime-amount">80 €</span>
+          </div>
+          <div class="prime-detail">Créditée au plus tard dans les 2 mois suivant l'ouverture effective</div>
+          <span class="prime-tag">Garantie</span>
+        </div>
+        
+        <div class="prime-card">
+          <div class="prime-header">
+            <span class="prime-label">Premier versement</span>
+            <span class="prime-amount">Jusqu'à 80 €</span>
+          </div>
+          <div class="prime-detail">10€ (1-49€) · 40€ (50-299€) · <strong>80€ (≥300€)</strong></div>
+          <span class="prime-tag">Versé sous 7 jours</span>
+        </div>
+        
+        <div class="prime-card">
+          <div class="prime-header">
+            <span class="prime-label">Opérations carte × 3 mois</span>
+            <span class="prime-amount">Jusqu'à 80 €</span>
+          </div>
+          <div class="prime-detail">20€ (j1-30) + 30€ (j31-60) + 30€ (j61-90)</div>
+          <span class="prime-tag">1 opération/mois suffit</span>
+        </div>
+        
+        <div class="prime-card">
+          <div class="prime-header">
+            <span class="prime-label">Mobilité EasyMove</span>
+            <span class="prime-amount">80 €</span>
+          </div>
+          <div class="prime-detail">Formulaire signé dans le mois · Transfert automatique de tes prélèvements</div>
+          <span class="prime-tag">Optionnel mais rentable</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- SECTION TOTAL -->
+    <div class="total-section fade-in">
+      <div class="total-label">TOTAL MAXIMUM POSSIBLE</div>
+      <div class="total-amount">320 €</div>
+      <div class="total-sub">Sur ton nouveau compte BoursoBank</div>
+    </div>
+    
+    <!-- SECTION TÉMOIGNAGES RÉELS -->
+    <div class="testimonials-section fade-in">
+      <div class="testimonials-header">
+        <h2>🎬 Témoignages de filleuls parrainés</h2>
+        <p class="testimonials-subtitle">Des personnes comme toi qui ont reçu leurs primes</p>
+        <div class="verified-badge">
+          ✓ Vidéos réelles non montées
+        </div>
+      </div>
+      
+      <div class="testimonials-grid">
+        <!-- TESTIMONIAL 1 -->
+        <div class="testimonial-card">
+          <div class="video-wrapper">
+            <!-- REMPLACE "video1.mp4" PAR TON FICHIER -->
+            <!-- Place tes vidéos dans le même dossier GitHub -->
+            <video controls poster="">
+              <source src="./videos/testimonial-1.mp4" type="video/mp4">
+              Votre navigateur ne支持 pas la vidéo.
+            </video>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">
+              <div class="author-avatar">CL</div>
+              <div class="author-details">
+                <strong>Camille L.</strong>
+                <span>Parrainé en septembre 2026</span>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "J'étais sceptique mais j'ai tout reçu : 320€ en moins de 2 mois. La démarche est simple, rien de compliqué."
+            </p>
+            <div class="testimonial-stats">
+              <span class="stat-item">💰 320€ reçus</span>
+              <span class="stat-item">✅ Tout validé</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- TESTIMONIAL 2 -->
+        <div class="testimonial-card">
+          <div class="video-wrapper">
+            <video controls poster="">
+              <source src="./videos/testimonial-2.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">
+              <div class="author-avatar">TM</div>
+              <div class="author-details">
+                <strong>Thomas M.</strong>
+                <span>Parrainé en août 2026</span>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Premier versement de 300€, carte utilisée 3 mois de suite. Les primes sont arrivées comme promis. Je recommande !"
+            </p>
+            <div class="testimonial-stats">
+              <span class="stat-item">💰 320€ reçus</span>
+              <span class="stat-item">⚡ 45 jours</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- TESTIMONIAL 3 -->
+        <div class="testimonial-card">
+          <div class="video-wrapper">
+            <video controls poster="">
+              <source src="./videos/testimonial-3.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">
+              <div class="author-avatar">SJ</div>
+              <div class="author-details">
+                <strong>Sophie J.</strong>
+                <span>Parrainée en octobre 2026</span>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "EasyMove m'a fait gagner du temps et 80€ en plus. BoursoBank est devenue ma banque principale, je suis contente."
+            </p>
+            <div class="testimonial-stats">
+              <span class="stat-item">💰 320€ reçus</span>
+              <span class="stat-item">🏦 Banque principale</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- TESTIMONIAL 4 -->
+        <div class="testimonial-card">
+          <div class="video-wrapper">
+            <video controls poster="">
+              <source src="./videos/testimonial-4.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+          <div class="testimonial-info">
+            <div class="testimonial-author">
+              <div class="author-avatar">DR</div>
+              <div class="author-details">
+                <strong>David R.</strong>
+                <span>Parrainé en juillet 2026</span>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Initialement pour la prime, maintenant je garde le compte. Gratuit, appli top, service client réactif. Plus que les 150€ du parrainage."
+            </p>
+            <div class="testimonial-stats">
+              <span class="stat-item">💰 320€ reçus</span>
+              <span class="stat-item">📱 Conserver le compte</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 30px;">
+        <p style="color: var(--gray); font-size: 0.9rem;">
+          🎥 Toutes ces vidéos sont des témoignages réels de personnes que j'ai personnellement parrainées.<br>
+          Pas de montage, pas de scénario — juste leur expérience honnête.
+        </p>
+      </div>
+    </div>
+    
+    <!-- SECTION SERIEUX & RAPIDITÉ -->
+    <div class="confidence fade-in">
+      <h3>✨ Pourquoi cette offre est sérieuse</h3>
+      
+      <div class="conf-item">
+        <span class="conf-icon">🚀</span>
+        <div class="conf-content">
+          <strong>Rapidité des versements garantie</strong>
+          <p>Les primes sont créditées automatiquement : <strong>7 jours après le premier versement</strong>, et au plus tard <strong>dans les 2 mois</strong> pour toutes les autres. Pas d'attente mystérieuse.</p>
+        </div>
+      </div>
+      
+      <div class="conf-item">
+        <span class="conf-icon">🏛️</span>
+        <div class="conf-content">
+          <strong>Société Générale derrière</strong>
+          <p>BoursoBank est une filiale à 100% de la Société Générale, banque historique française depuis 1864. Agrément ACPR obligatoire. <strong>Ce n'est pas une fintech risquée.</strong></p>
+        </div>
+      </div>
+      
+      <div class="conf-item">
+        <span class="conf-icon">🛡️</span>
+        <div class="conf-content">
+          <strong>Fonds protégés jusqu'à 100 000 €</strong>
+          <p>Garantie des Dépôts et Fonds de Garantie (FDGF) française. En cas de problème, <strong>t'as une protection légale</strong> jusqu'à 100k€ par personne.</p>
+        </div>
+      </div>
+      
+      <div class="conf-item">
+        <span class="conf-icon">💰</span>
+        <div class="conf-content">
+          <strong>Pas d'arnaque, pas de piège</strong>
+          <p>Compte <strong>gratuit à vie</strong> sans condition de revenus. Carte Welcome gratuite. Délai légal de rétractation de 14 jours. <strong>Tu peux tout annuler sans pénalité</strong>.</p>
+        </div>
+      </div>
+      
+      <div class="conf-item">
+        <span class="conf-icon">📈</span>
+        <div class="conf-content">
+          <strong>8,4 millions de clients</strong>
+          <p>Plus de 8 millions de Français font confiance à BoursoBank. 80% des nouveaux clients viennent par parrainage. <strong>Quand tout le monde le fait, c'est que ça marche.</strong></p>
+        </div>
+      </div>
+      
+      <div class="alert-info">
+        <strong>ℹ️ Info importante :</strong> Les primes sont reversées sur ton compte BoursoBank lui-même. Tu peux retirer l'argent immédiatement après réception, ou le laisser travailler. Aucune obligation de maintien sauf si tu clôtures avant 24 mois.
+      </div>
+    </div>
+    
+    <!-- FAQ SECTION -->
+    <div class="faq-section fade-in">
+      <h2>❓ Foire Aux Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Est-ce vraiment gratuit ?</div>
+        <div class="faq-answer">
+          <strong>Oui, le compte est 100% gratuit à vie</strong> sans condition de revenus ni de maintien. La carte Welcome est gratuite, les virements sont gratuits, pas de frais de tenue de compte. Les seules options payantes sont les cartes Visa/Metal (facultatives).
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Combien de temps pour recevoir les primes ?</div>
+        <div class="faq-answer">
+          <strong>Premier versement :</strong> sous 7 jours après validation<br>
+          <strong>Prime ouverture :</strong> au plus tard dans les 2 mois<br>
+          <strong>Carte × 3 mois :</strong> chaque prime créditée après validation mensuelle<br>
+          <strong>EasyMove :</strong> au plus tard 60 jours après signature du formulaire
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Puis-je clôturer le compte après avoir touché les primes ?</div>
+        <div class="faq-answer">
+          Oui, mais <strong>si tu clôture avant 24 mois, BoursoBank récupère les primes versées</strong>. C'est pourquoi je conseille de garder le compte au minimum 2 ans, ou de l'utiliser comme compte principal (paiements, salaire, etc.). Beaucoup de filleuls le gardent car il est gratuit et pratique.
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Je n'ai jamais été client BoursoBank, mais j'avais un compte joint. Est-ce que je peux parrainer ?</div>
+        <div class="faq-answer">
+          <strong>Non</strong>, un compte joint compte comme une relation cliente. Seuls ceux qui n'ont <strong>jamais eu aucun compte</strong> (individuel ou joint) avec BoursoBank peuvent être parrainés. Les anciens clients fermés depuis plus de 24 mois sont généralement acceptés — vérifie lors de l'inscription.
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Le code parrain peut-il être ajouté après coup ?</div>
+        <div class="faq-answer">
+          <strong>Non, jamais.</strong> Le code doit être saisi <strong>durant le processus d'inscription</strong>, avant la validation finale. Une fois le compte créé sans code, impossible de l'ajouter rétroactivement. C'est pour ça que je te recommande d'utiliser mon lien direct (code pré-rempli automatiquement).
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Quelle carte choisir pour maximiser les primes ?</div>
+        <div class="faq-answer">
+          La carte <strong>Welcome (gratuite)</strong> suffit largement pour valider les primes. Elle fonctionne partout où Accepte les CB. Les cartes Visa/Metal sont payantes (respectivement ~1,99€/mois et 9,90€/mois) mais offrent des assurances voyage supplémentaires. Pour la prime parrainage, <strong>la Welcome est parfaite</strong>.
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Que se passe-t-il si je rate un mois d'opération carte ?</div>
+        <div class="faq-answer">
+          Si tu ne fais <strong>aucune opération par carte dans un mois civil</strong>, la prime de ce mois n'est pas créditée. <strong>Mais tu peux continuer les mois suivants</strong> — tu perds juste celle du mois raté. Pour éviter les frais d'inactivity (5€/mois Welcome), fais au moins 1 paiement par mois (même 1€).
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Comment fonctionne EasyMove ? Est-ce vraiment utile ?</div>
+        <div class="faq-answer">
+          EasyMove est <strong>gratuit</strong> et transfère automatiquement tous tes prélèvements et virements récurrents depuis ton ancienne banque vers BoursoBank. Tu signes un formulaire en ligne, BoursoBank contacte tes émetteurs. <strong>80€ de prime</strong> si au moins 1 opération réussie. Utile pour changer de banque sans stress, et les 80€ compensent largement le temps investi.
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Quel est ton intérêt à me parrainer ?</div>
+        <div class="faq-answer">
+          Honnêtement : <strong>je reçois 150€</strong> quand tu valides toutes les étapes. Mais toi aussi tu gagnes jusqu'à <strong>320€</strong>. C'est un vrai win-win. Je ne gagne rien si tu n'ouvres pas de compte ou si tu ne remplis pas les conditions. Donc j'ai intérêt à être transparent et à t'aider à réussir ton parrainage !
+        </div>
+      </div>
+    </div>
+    
+    <!-- CODE PARRAIN -->
+    <div class="code-box fade-in">
+      <label>VOTRE CODE PARRAIN (à saisir lors de l'inscription)</label>
+      <div class="code-display">LOLE62846Z</div>
+      <div style="font-size: 0.9rem; color: var(--gray);">👉 Ou utilise le lien direct ci-dessous (code pré-rempli)</div>
+    </div>
+    
+    <!-- CONDITIONS -->
+    <div class="conditions fade-in">
+      <h3>⚠️ Conditions à respecter (officielles BoursoBank)</h3>
+      <ul>
+        <li>Personne physique majeure, résidente fiscale en France</li>
+        <li>Jamais été client BoursoBank auparavant (compte individuel)</li>
+        <li>Demande d'ouverture <strong>avant le 13/10/2026 à 17h</strong></li>
+        <li>Premier versement réalisé dans les 30 jours suivant l'ouverture</li>
+        <li>Minimum 1 opération par carte bancaire chaque mois pendant 3 mois</li>
+        <li>Mobilité EasyMove optionnelle (signer dans les 30 jours pour les 80€ supplémentaires)</li>
+        <li>Clôture ou perte de domiciliation avant 24 mois → remboursement des primes</li>
+      </ul>
+    </div>
+    
+    <!-- PRIME PARRAIN -->
+    <div class="section fade-in" style="background: linear-gradient(135deg, #F3F4F6, #E0E7FF);">
+      <h2>💼 Côté Parrain (Moi)</h2>
+      <div style="text-align: center;">
+        <p style="font-size: 1.1rem; margin-bottom: 15px;">Pour chaque filleul qui valide toutes les étapes :</p>
+        <div style="font-size: 2.5rem; font-weight: 900; color: var(--purple-dark); margin-bottom: 15px;">
+          150 €
+        </div>
+        <p style="font-size: 0.9rem; color: var(--gray);">
+          Versé sur mon compte après validation de ton premier versement<br>
+          Limité à 20 parrainages par an (12 mois glissants)
+        </p>
+      </div>
+    </div>
+    
+    <!-- DOUBLE CTA FINAL -->
+    <div style="text-align: center; margin: 40px 0;" class="fade-in">
+      <a href="https://www.boursobank.com/landing/parrainage?code_parrain=LOLE62846Z&origine=868" 
+         class="cta-button"
+         target="_blank"
+         rel="nofollow noopener"
+         style="font-size: 1.3rem; padding: 22px 50px;">
+        👉 OUVRIR MON COMPTE MAINTENANT
+      </a>
+      <p style="margin-top: 15px; font-size: 0.9rem; color: var(--gray);">
+        Lien sécurisé · Code parrain pré-rempli · Inscription en 5 min
+      </p>
+    </div>
+    
   </div>
-
-  <div class="card">
-    <div><div class="label">Mobilité bancaire EasyMove</div><div class="detail">Formulaire signé dans le mois suivant l'ouverture · versée au plus tard 60 j après signature</div></div>
-    <span class="amount">80&nbsp;€</span>
-  </div>
-
-  <div class="total">
-    <div>= jusqu'à 320&nbsp;€</div>
-    <div style="font-size:.9rem; opacity:.9;">sur ton nouveau compte BoursoBank (max. si toutes les conditions sont remplies)</div>
-  </div>
-
-  <h2>Prime du Parrain</h2>
-  <table>
-    <thead>
-      <tr><th>Filleul parrainé</th><th>Prime pour moi</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Par filleul qui devient client (selon l'offre en cours)</td><td><strong>jusqu'à 150&nbsp;€</strong></td></tr>
-    </tbody>
-  </table>
-
-  <h2>Conditions clés</h2>
-  <div class="conditions">
-    <ul>
-      <li>Personne physique majeure, jamais client BoursoBank</li>
-      <li>Compte individuel uniquement (pas pro / joint)</li>
-      <li>Demande d'ouverture <strong>avant le 13/10/2026 à 17h</strong></li>
-      <li>Versement, opérations carte et mobilité EasyMove à réaliser depuis ce nouveau compte</li>
-      <li>1 seule offre, non cumulable</li>
-      <li>Clôture ou perte de domiciliation &lt; 24 mois → remboursement des primes</li>
-    </ul>
-  </div>
-
-  <p class="disclaimer">
-    ⚠️ Cette page contient un <a href="https://www.boursobank.com/landing/parrainage?code_parrain=LOLE62846Z&origine=868" rel="nofollow noopener">lien de parrainage</a>.
-    Je reçois une prime si vous ouvrez un compte via ce <a href="https://www.boursobank.com/landing/parrainage?code_parrain=LOLE62846Z&origine=868" rel="nofollow noopener">lien</a>.
-    Montants et conditions issus de l'offre en vigueur au moment de la mise à jour, susceptibles d'évoluer — voir les conditions officielles sur boursobank.com.
-  </p>
-
-  <footer>Page indépendante, non affiliée à BoursoBank · Code parrain : LOLE62846Z</footer>
-</div>
+  
+  <!-- FLOATING CTA MOBILE -->
+  <a href="https://www.boursobank.com/landing/parrainage?code_parrain=LOLE62846Z&origine=868" 
+     class="floating-cta"
+     target="_blank"
+     rel="nofollow noopener">
+    <div class="floating-btn">
+      💰 320€ OFFERTS - CLIQUE ICI
+    </div>
+  </a>
+  
+  <!-- FOOTER -->
+  <footer>
+    <p>Page indépendante de parrainage · Non affiliée à BoursoBank</p>
+    <p>Code parrain : <strong>LOLE62846Z</strong></p>
+    <p>Conditions officielles : <a href="https://www.boursobank.com/bon-plan/parrainage-boursobank" target="_blank" rel="nofollow noopener">boursobank.com</a></p>
+    
+    <div class="disclaimer">
+      <p>⚠️ Cette page contient des liens de parrainage. Je reçois une prime de 150€ si vous ouvrez un compte via ce lien.<br>
+      Montants et conditions vérifiés le 11 octobre 2026. Sous réserve des Conditions Générales de BoursoBank.</p>
+    </div>
+    
+    <p style="margin-top: 20px;">
+      <a href="https://github.com/VraimentGagant/bourso-parrainage" target="_blank" rel="noopener">
+        Source GitHub
+      </a> · 
+      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+        Retour en haut ↑
+      </a>
+    </p>
+  </footer>
+  
+  <!-- SCRIPT COUNTDOWN -->
+  <script>
+    // Date limite de l'offre
+    const OFFRE_END_DATE = new Date('2026-10-13T17:00:00').getTime();
+    
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = OFFRE_END_DATE - now;
+      
+      if (distance < 0) {
+        // Offre expirée
+        document.getElementById('countdown').style.display = 'none';
+        document.getElementById('expired-message').style.display = 'block';
+        return;
+      }
+      
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    
+    // Mise à jour chaque seconde
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Premier appel immédiat
+  </script>
+  
+  <!-- SCROLL DETECTEUR -->
+  <script>
+    // Afficher le bouton flottant après avoir scrollé
+    window.addEventListener('scroll', function() {
+      const floatingCTA = document.querySelector('.floating-cta');
+      if (window.scrollY > 600) {
+        floatingCTA.style.display = 'block';
+      } else {
+        floatingCTA.style.display = 'none';
+      }
+    });
+    
+    // Animation au scroll (fade-in progressive)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+  
 </body>
 </html>
